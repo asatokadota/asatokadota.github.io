@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="">
+  <meta name="description" content="Love for all living wonders. Playfully elegant jewelry handmade in Tokyo, Japan. AK Jewelry launched in Soho, New York with a small trunk show that caught the eye of editors and stylists in 2010.">
+  <meta property="og:title" content="All items - Shop online - AK Jewelry">
+  <meta property="og:description" content="Love for all living wonders. Playfully elegant jewelry handmade in Tokyo, Japan. AK Jewelry launched in Soho, New York with a small trunk show that caught the eye of editors and stylists in 2010.">
+  <meta property="og:url" content="http://asato.mimoza.jp/">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="AK Jewelry">
+  <link rel="canonical" href="http://asato.mimoza.jp/">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>All items - Shop online - AK Jewelry</title>
+
+  <template id="js-product-template">
+    <li id="item">
+      <article>
+        <div class="item-photo">
+          <img src="" alt="" id="js-image">
+        </div>
+        <div class="item-info">
+          <div class="item-name" id="js-name"></div>
+          <p class="item-description" id="js-description"></p>
+          <a href="" class="item-details-toggle" id="js-item-details-toggle">
+            <span>See more info</span>
+            <i class="icon fa-solid fa-chevron-down" id="js-item-details-icon"></i>
+          </a>
+          <dl class="item-details" id="js-item-details">
+            <div class="details-txt">
+              <dt>Weight</dt>
+              <dd></dd>
+            </div>
+            <div class="details-txt">
+              <dt>Made in</dt>
+              <dd></dd>
+            </div>
+            <div class="details-txt">
+              <dt>Product code</dt>
+              <dd></dd>
+            </div>
+          </dl>
+          <div class="item-price">
+            <div class="original price"><span id="js-original-price"></span></div>
+            <div class="current price"><span id="js-current-price"></span></div>
+          </div>
+        </div>
+        <button type="submit" title="Add to Cart" class="btn-cmn" id="js-add-cart">
+          <span>Add to Cart</span>
+        </button>
+      </article>
+    </li>
+  </template>
+  <template id="js-cart-template">
+    <div class="cart-row" id="cart-item">
+      <div class="cart-item cart-column">
+          <img class="cart-item-image" src="" id="js-cart-image">
+          <span class="cart-item-title" id="js-cart-name"></span>
+      </div>
+      <span class="cart-price cart-column" id="js-cart-price"></span>
+      <div class="cart-quantity cart-column">
+          <input class="cart-quantity-input" type="number" value="1" min="0" id="js-count">
+          <button class="btn-danger" type="button" id="js-remove-all"><span>Remove</span></button>
+      </div>
+    </div>
+  </template>
+</head>
+
+<body id="js-toggle">
+  <header>
+    <a href="" class="cart-btn" id="js-cart-btn">
+      <span class="icon" id="js-cart-icon"></span>
+      <span class="cart-amount" id="js-cart-amount"></span>
+    </a>
+    <div class="cart-open" id="js-cart">
+      <div class="cart-container">
+        <h2 class="cart-title">CART</h2>
+        <div class="cart-items" id="cart-list"></div>
+        <div class="cart-total">
+            <span class="cart-total-title">Total</span>
+            <span class="cart-total-price" id="js-cart-total-price"></span>
+        </div>
+        <button class="btn-cmn" type="button"><span>Purchase</span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="inner">
+      <h1 class="section-title">ALL ITEMS</h1>
+      <ul class="item-container" id="item-list"></ul>
+    </section>
+  </main>
+  <footer>© AK Jewelry 2022</footer>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
